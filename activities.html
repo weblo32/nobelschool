@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clubs & Activities | Noble School & Junior College</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .club-card {
+      background-color: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .club-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+    .club-card h4 {
+      color: var(--primary);
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+    .club-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Injected Header -->
+  <div id="header-container"></div>
+
+  <main class="animate-fade-up">
+
+  <!-- Banner -->
+  <div class="page-banner animate-fade-up" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80');">
+    <div class="page-banner-content">
+      <h1>Clubs & Co-Curriculars</h1>
+      <p>Home / Student Activities</p>
+    </div>
+  </div>
+
+  <!-- Co-curricular Clubs Overview -->
+  <section id="about" class="section animate-fade-up delay-1">
+    <div class="container grid-2" style="align-items: center;">
+      <div>
+        <h2 style="color: var(--primary); margin-bottom: 1rem;">Co-Curricular & Student Clubs</h2>
+        <p style="color: var(--text-light); margin-bottom: 1.2rem; font-size: 1.05rem;">
+          Education is complete when students participate in group activities, discussions, and creative labs. Our clubs help teenagers explore interests outside the board syllabus.
+        </p>
+        <p style="margin-bottom: 1rem;">
+          Students can choose to join any club at the beginning of Class 11. Each club has a dedicated faculty supervisor who schedules weekly sessions, seminars, and events.
+        </p>
+        <p>
+          Participating in these activities builds confidence, teamwork skills, and helps students create portfolios for higher university admissions.
+        </p>
+      </div>
+      <div>
+        <div class="img-container" style="height: 300px;">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="Students Activity">
+          <div class="overlay-gradient">
+            <h3 style="font-size: 1.5rem; font-family: var(--font-headings); font-weight: 700; margin-bottom: 0.5rem; color: var(--white);">Why Join Clubs?</h3>
+            <p style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 1.25rem; color: var(--white);">Explore practical science, public debate, nature trekking, and team sports.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Club Cards List -->
+  <section class="section bg-light animate-fade-up delay-2" style="padding-top: 3rem;">
+    <div class="container">
+      <h2 class="section-title">Active Student Clubs</h2>
+      
+      <div class="grid-3">
+        <!-- Science Club -->
+        <div class="club-card" style="padding: 0; overflow: hidden;">
+          <div style="height: 140px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=400&q=80" alt="Science Club" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 1.25rem;">🔬</span>
+              <h4 style="margin: 0;">Junior Science Club</h4>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-dark);">
+              Schedules science workshops, robotics exhibitions, and visits to laboratories. Helps students build working physics and chemistry models.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Literary Club -->
+        <div class="club-card" style="padding: 0; overflow: hidden;">
+          <div style="height: 140px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=400&q=80" alt="Literary Club" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 1.25rem;">🗣️</span>
+              <h4 style="margin: 0;">Literary & Debate Club</h4>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-dark);">
+              Hosts inter-class speech debates, spelling contests, and creative essay writing sessions to build English and communication skills.
+            </p>
+          </div>
+        </div>
+ 
+        <!-- Eco Club -->
+        <div class="club-card" style="padding: 0; overflow: hidden;">
+          <div style="height: 140px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=400&q=80" alt="Nature Club" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 1.25rem;">🌱</span>
+              <h4 style="margin: 0;">Nature & Eco Club</h4>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-dark);">
+              Organizes tree plantations, environmental awareness drives, recycling campaigns, and nature walks in nearby forest areas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NSS and Sports Council -->
+  <section id="nss-sports" class="section animate-fade-up">
+    <div class="container">
+      <h2 class="section-title">NSS & Sports Council</h2>
+      <p class="text-center" style="color: var(--text-light); margin-bottom: 2rem;">Developing discipline, social concern, and athletic ability in our students.</p>
+
+      <div class="grid-2">
+        <!-- NSS Card -->
+        <div class="card" style="border-top-color: var(--secondary);">
+          <h3 style="color: var(--primary); margin-bottom: 1rem;">National Service Scheme (NSS) Unit</h3>
+          <p style="margin-bottom: 1rem;">
+            Our registered NSS unit encourages students to participate in community service. Activities include cleanliness campaigns in nearby villages, blood donation drives, and public safety rallies.
+          </p>
+          <ul style="padding-left: 1.25rem; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li>🌿 Organizing Swachh Bharat Abhiyan cleaning weeks.</li>
+            <li>🌿 Medical checkup camps for local residents.</li>
+            <li>🌿 Arranging digital literacy classes for rural children.</li>
+          </ul>
+        </div>
+
+        <!-- Sports Card -->
+        <div class="card" style="border-top-color: var(--primary);">
+          <h3 style="color: var(--primary); margin-bottom: 1rem;">Sports Council</h3>
+          <p style="margin-bottom: 1rem;">
+            Noble School provides standard facilities for indoor and outdoor sports. The Sports Council schedules the annual sports meet, inter-house matches, and trains athletes for state board sports tournaments.
+          </p>
+          <ul style="padding-left: 1.25rem; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li>🏆 Outdoor: Cricket, Football, Volleyball, Kabaddi.</li>
+            <li>🏆 Indoor: Carrom, Chess, Table Tennis.</li>
+            <li>🏆 Dedicated coaches for track athletics and sprint events.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Injected Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript Component -->
+  <script src="components.js"></script>
+</body>
+</html>

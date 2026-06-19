@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Guidance & Results | Noble School & Junior College</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .coaching-card {
+      background-color: var(--white);
+      border-left: 4px solid var(--primary);
+      padding: 1.5rem;
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 1rem;
+    }
+    .topper-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .topper-card {
+      background-color: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .topper-card:hover {
+      border-color: var(--secondary);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .topper-avatar {
+      width: 80px;
+      height: 80px;
+      background-color: var(--primary);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Injected Header -->
+  <div id="header-container"></div>
+
+  <main class="animate-fade-up">
+
+  <!-- Banner -->
+  <div class="page-banner animate-fade-up" style="background-image: url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1200&q=80');">
+    <div class="page-banner-content">
+      <h1>Career Guidance & Results</h1>
+      <p>Home / Competitive Preparation</p>
+    </div>
+  </div>
+
+  <!-- Career Counselling Desk -->
+  <section id="about" class="section animate-fade-up delay-1">
+    <div class="container grid-2" style="align-items: center;">
+      <div>
+        <h2 style="color: var(--primary); margin-bottom: 1rem;">Career Counselling & Guidance Desk</h2>
+        <p style="color: var(--text-light); margin-bottom: 1.2rem; font-size: 1.05rem;">
+          Navigating career pathways after Class 12 is a crucial milestone. Our cell provides regular guidance seminars and counseling worksheets.
+        </p>
+        <p style="margin-bottom: 1rem;">
+          We host mock counseling sessions where industry counselors, university deans, and education specialists talk about engineering, medicine, chartered accountancy, design, law, and pure science careers.
+        </p>
+        <p>
+          Students are provided support to fill university forms, understand JEE/NEET seat allocation rules, and identify scholarship opportunities.
+        </p>
+      </div>
+      <div>
+        <div style="background-color: var(--light); padding: 2.5rem; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--primary); margin-bottom: 1rem; border-left: 4px solid var(--secondary); padding-left: 0.75rem;">Counseling Activities</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem;">
+            <li>🔑 One-on-one student stream guidance.</li>
+            <li>🔑 Seminars on CA Foundation registration.</li>
+            <li>🔑 JEE / NEET portal mock seat allocation workshops.</li>
+            <li>🔑 Guidance for studying in international colleges.</li>
+            <li>🔑 Career path worksheets for Humanities & Arts students.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competitive Exam Coaching -->
+  <section id="coaching" class="section bg-light animate-fade-up delay-2">
+    <div class="container">
+      <h2 class="section-title">Integrated Entrance Coaching</h2>
+      <p class="text-center" style="color: var(--text-light); margin-bottom: 2rem;">Integrated classroom programs to crack competitive entrance exams alongside HSC board studies.</p>
+      
+      <div class="grid-2">
+        <div>
+          <h3 style="color: var(--primary); margin-bottom: 1rem;">Science Entrance Cell (IIT-JEE / NEET / CET)</h3>
+          <div class="coaching-card">
+            <strong>IIT-JEE (Main & Advanced) Batch</strong>
+            <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.25rem;">Focused on Physics, Chemistry, and Advanced Mathematics. Daily practice papers (DPPs) and weekly computer-based test drills.</p>
+          </div>
+          <div class="coaching-card" style="border-left-color: var(--secondary);">
+            <strong>NEET (Medical Entrance) Batch</strong>
+            <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.25rem;">Intensive biology, chemistry, and physics modules, with access to botanical and anatomical mock collections.</p>
+          </div>
+          <div class="coaching-card">
+            <strong>MHT-CET Engineering & Pharmacy Batch</strong>
+            <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.25rem;">Speed-building methods, state board syllabus optimization, and online mock exams matching state portal layouts.</p>
+          </div>
+        </div>
+        
+        <div>
+          <h3 style="color: var(--primary); margin-bottom: 1rem;">Commerce & Arts Career Cells</h3>
+          <div class="coaching-card" style="border-left-color: var(--secondary);">
+            <strong>CA Foundation Integrated Class</strong>
+            <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.25rem;">Special batch covering Accountancy principles, Business Law, Mercantile Law, and Logical Reasoning guided by CA faculties.</p>
+          </div>
+          <div class="coaching-card">
+            <strong>CS & CSEET Foundation Guidance</strong>
+            <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.25rem;">Classes covering Company Secretaryship prerequisites and business law principles.</p>
+          </div>
+          <div class="coaching-card" style="border-left-color: var(--secondary);">
+            <strong>Law & CLAT Guidance Cell</strong>
+            <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.25rem;">Guidance for 5-Year Integrated LLB admissions and CLAT entrance preparation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Board Exam Results -->
+  <section id="results" class="section animate-fade-up">
+    <div class="container">
+      <h2 class="section-title">HSC Board Examination Toppers</h2>
+      <p class="text-center" style="color: var(--text-light); margin-bottom: 1rem;">Celebrating our top-performing students from the recent Class 12 HSC Board Exams.</p>
+      
+      <div class="topper-grid">
+        <!-- Topper 1 -->
+        <div class="topper-card animate-fade-up delay-1" style="border-top: 4px solid var(--secondary); padding-top: 2rem;">
+          <div style="width: 90px; height: 90px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.25rem; border: 3px solid var(--light); box-shadow: var(--shadow-sm);">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80" alt="Rahul Deshmukh" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <h4 style="color: var(--primary); font-family: var(--font-headings); font-weight:700;">Rahul Deshmukh</h4>
+          <span style="font-weight: 800; color: var(--secondary); font-size: 1.35rem; display: block; margin: 0.25rem 0;">96.00%</span>
+          <span style="font-size: 0.8rem; color: var(--text-light); font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Science Stream (HSC)</span>
+        </div>
+        <!-- Topper 2 -->
+        <div class="topper-card animate-fade-up delay-2" style="border-top: 4px solid var(--primary); padding-top: 2rem;">
+          <div style="width: 90px; height: 90px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.25rem; border: 3px solid var(--light); box-shadow: var(--shadow-sm);">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80" alt="Anjali Mehta" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <h4 style="color: var(--primary); font-family: var(--font-headings); font-weight:700;">Anjali Mehta</h4>
+          <span style="font-weight: 800; color: var(--secondary); font-size: 1.35rem; display: block; margin: 0.25rem 0;">95.50%</span>
+          <span style="font-size: 0.8rem; color: var(--text-light); font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Commerce Stream (HSC)</span>
+        </div>
+        <!-- Topper 3 -->
+        <div class="topper-card animate-fade-up delay-3" style="border-top: 4px solid var(--secondary); padding-top: 2rem;">
+          <div style="width: 90px; height: 90px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.25rem; border: 3px solid var(--light); box-shadow: var(--shadow-sm);">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150&q=80" alt="Sneha Shinde" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <h4 style="color: var(--primary); font-family: var(--font-headings); font-weight:700;">Sneha Shinde</h4>
+          <span style="font-weight: 800; color: var(--secondary); font-size: 1.35rem; display: block; margin: 0.25rem 0;">94.20%</span>
+          <span style="font-size: 0.8rem; color: var(--text-light); font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Arts Stream (HSC)</span>
+        </div>
+        <!-- Topper 4 -->
+        <div class="topper-card animate-fade-up delay-4" style="border-top: 4px solid var(--primary); padding-top: 2rem;">
+          <div style="width: 90px; height: 90px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.25rem; border: 3px solid var(--light); box-shadow: var(--shadow-sm);">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80" alt="Amit Patil" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <h4 style="color: var(--primary); font-family: var(--font-headings); font-weight:700;">Amit Patil</h4>
+          <span style="font-weight: 800; color: var(--secondary); font-size: 1.35rem; display: block; margin: 0.25rem 0;">93.80%</span>
+          <span style="font-size: 0.8rem; color: var(--text-light); font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Science - 2nd Topper</span>
+        </div>
+      </div>
+      
+      <div class="table-responsive" style="margin-top: 3rem;">
+        <h3 style="font-size: 1.25rem; color: var(--primary); margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem;">HSC Board Result Analysis</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Junior College Stream</th>
+              <th>Total Students Appeared</th>
+              <th>Students Passed</th>
+              <th>Passing Percentage (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Science Stream</strong></td>
+              <td>180</td>
+              <td>180</td>
+              <td><strong>100%</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Commerce Stream</strong></td>
+              <td>120</td>
+              <td>120</td>
+              <td><strong>100%</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Arts Stream</strong></td>
+              <td>80</td>
+              <td>78</td>
+              <td><strong>97.5%</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Injected Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript Component -->
+  <script src="components.js"></script>
+</body>
+</html>

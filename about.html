@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Noble School & Junior College</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Custom style for organization chart tree */
+    .org-chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .org-node {
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-top: 4px solid var(--primary);
+      padding: 1rem 1.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      min-width: 200px;
+    }
+    .org-node.root {
+      border-top-color: var(--secondary);
+    }
+    .org-branch {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .org-line {
+      width: 2px;
+      height: 20px;
+      background-color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Injected Header -->
+  <div id="header-container"></div>
+
+  <main class="animate-fade-up">
+
+  <!-- Banner -->
+  <div class="page-banner animate-fade-up" style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80');">
+    <div class="page-banner-content">
+      <h1>About Noble Junior College</h1>
+      <p>Home / Academic Journey</p>
+    </div>
+  </div>
+
+  <!-- About Intro -->
+  <section class="section animate-fade-up delay-1">
+    <div class="container grid-2" style="align-items: center;">
+      <div>
+        <h2 style="color: var(--primary); margin-bottom: 1rem;">Our Heritage & Vision</h2>
+        <p style="color: var(--text-light); margin-bottom: 1.2rem; font-size: 1.05rem;">
+          Noble School & Junior College was established in 2010 with a vision to provide standard secondary and higher secondary education in Thane.
+        </p>
+        <p style="margin-bottom: 1rem;">
+          Our 25-acre lush green campus in Shahapur provides a serene atmosphere for study. Over the years, we have built standard science labs, computer rooms, and libraries containing reference guides, sample board exam question sets, and competitive entrance books.
+        </p>
+        <p>
+          We are committed to providing personalized guidance to every student, helping them build solid conceptual foundations in Science, Commerce, and Arts, preparing them for higher studies and board success.
+        </p>
+      </div>
+      <div>
+        <div style="background-color: var(--light); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: var(--border-radius); box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--primary); margin-bottom: 1rem; border-left: 4px solid var(--secondary); padding-left: 0.75rem;">Key Credentials</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li>✅ Affiliated with Maharashtra State Board (MSBSHSE), Pune</li>
+            <li>✅ Recognized by DYDE, Government of Maharashtra</li>
+            <li>✅ Integrated JEE, NEET & CA coaching cell</li>
+            <li>✅ Fully equipped Physics, Chemistry & Biology Labs</li>
+            <li>✅ ISO 9001:2015 Certified School Infrastructure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision, Mission, Values -->
+  <section id="vision" class="section bg-light animate-fade-up delay-2">
+    <div class="container">
+      <h2 class="section-title">Vision, Mission & Core Values</h2>
+      <div class="grid-3">
+        <div class="card" style="border-top-color: var(--secondary);">
+          <div class="card-icon">👁️</div>
+          <h3>Our Vision</h3>
+          <p>To be recognized as a center of academic excellence at the school and higher secondary levels, nurturing values, discipline, and scientific curiosity in teenagers.</p>
+        </div>
+        <div class="card" style="border-top-color: var(--primary);">
+          <div class="card-icon">🚀</div>
+          <h3>Our Mission</h3>
+          <p>To deliver quality state-board teaching integrated with competitive exam prep, supporting student-led science exhibits, sports councils, and character development.</p>
+        </div>
+        <div class="card" style="border-top-color: var(--secondary);">
+          <div class="card-icon">🤝</div>
+          <h3>Our Core Values</h3>
+          <p>Academic Integrity, Mutual Respect, Intellectual Curiosity, and Social Empathy. We encourage students to participate in NSS and sports activities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Message -->
+  <section id="messages" class="section animate-fade-up delay-3">
+    <div class="container">
+      <h2 class="section-title">Leadership Desk</h2>
+      
+      <div class="tabs">
+        <button class="btn tab-btn active" onclick="openTab('president')">President's Message</button>
+        <button class="btn tab-btn" onclick="openTab('principal')">Principal's Desk</button>
+      </div>
+
+      <!-- President Message Tab -->
+      <div id="president" class="tab-content active">
+        <div class="message-desk">
+          <div class="desk-img">
+            <div class="img-container" style="height: 280px; width: 220px;">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" alt="Dr. V. R. Alamuri">
+              <div class="overlay-gradient" style="padding: 0.75rem;">
+                <h4 style="font-size: 0.95rem; margin-bottom: 0.1rem; color: var(--white);">Dr. V. R. Alamuri</h4>
+                <p style="font-size: 0.7rem; opacity: 0.9; color: var(--white);">Founder & President</p>
+              </div>
+            </div>
+          </div>
+          <div class="desk-content">
+            <h3 style="color: var(--primary); margin-bottom: 1rem;">Building Strong Foundations for Higher Education</h3>
+            <p style="margin-bottom: 1rem; font-style: italic; color: var(--text-light);">
+              "The roots of education are bitter, but the fruit is sweet."
+            </p>
+            <p style="margin-bottom: 1rem;">
+              Higher Secondary Education (11th & 12th Std) acts as the bridge to professional degrees. Our goal is to provide a clean, modern, and high-resource environment where young minds can master fundamentals.
+            </p>
+            <p>
+              We have heavily invested in science laboratory kits and state board textbooks. Our counselors are always available to help students choose the right streams and career choices.
+            </p>
+            <span class="desk-author">Dr. V. R. Alamuri</span>
+            <span class="desk-title">President, Koti Vidya Charitable Trust</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Principal Message Tab -->
+      <div id="principal" class="tab-content">
+        <div class="message-desk">
+          <div class="desk-img">
+            <div class="img-container" style="height: 280px; width: 220px;">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&q=80" alt="Dr. S. K. Patil">
+              <div class="overlay-gradient" style="padding: 0.75rem;">
+                <h4 style="font-size: 0.95rem; margin-bottom: 0.1rem; color: var(--white);">Dr. S. K. Patil</h4>
+                <p style="font-size: 0.7rem; opacity: 0.9; color: var(--white);">Principal, Noble JC</p>
+              </div>
+            </div>
+          </div>
+          <div class="desk-content">
+            <h3 style="color: var(--primary); margin-bottom: 1rem;">From the Principal's Desk</h3>
+            <p style="margin-bottom: 1rem;">
+              Welcome to the academic year at Noble Junior College. Our junior college has achieved 100% success rate in board exams. We place special focus on regular attendance, monthly class tests, and comprehensive board writing practices.
+            </p>
+            <p style="margin-bottom: 1rem;">
+              For Science students, we offer integrated classes for JEE, NEET, and MHT-CET, ensuring they don't have to seek outside coaching. Commerce students are guided by CA faculty, preparing them for the CA Foundation early on.
+            </p>
+            <span class="desk-author">Dr. S. K. Patil</span>
+            <span class="desk-title">Principal, Noble School & Junior College</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Quality Policy -->
+  <section id="quality" class="section bg-light animate-fade-up">
+    <div class="container grid-2" style="align-items: center;">
+      <div>
+        <div style="background-color: var(--white); border-top: 4px solid var(--secondary); padding: 2.5rem; border-radius: var(--border-radius); box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--primary); font-size: 1.75rem; margin-bottom: 1rem;">Quality Policy Statement</h3>
+          <p style="font-style: italic; color: var(--text-light); margin-bottom: 1.5rem;">
+            "We commit to provide quality education by maintaining disciplined attendance patterns, conducting systematic weekly evaluations, and training our faculty on the revised HSC board syllabus."
+          </p>
+          <p>
+            Every department is audited regularly to check that course milestones are completed on time, board practical sheets are verified, and student reviews are logged for action.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h2 style="color: var(--primary); margin-bottom: 1rem;">Strategic Goals</h2>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+          <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <span style="color: var(--secondary); font-weight: 700;">▸</span>
+            <span>Achieve 100% distinction and first-class grades in the final HSC Board examinations.</span>
+          </li>
+          <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <span style="color: var(--secondary); font-weight: 700;">▸</span>
+            <span>Provide premium entrance coaching to help students clear JEE/NEET/CET and CA exams.</span>
+          </li>
+          <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <span style="color: var(--secondary); font-weight: 700;">▸</span>
+            <span>Integrate digital IT tools and computer science bootcamps in our commerce & science classes.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizational Chart -->
+  <section id="chart" class="section animate-fade-up">
+    <div class="container">
+      <h2 class="section-title">Organizational Chart</h2>
+      <p class="text-center" style="color: var(--text-light); margin-bottom: 2rem;">Overview of administrative and academic hierarchy at Noble Junior College.</p>
+      
+      <div class="org-chart">
+        <div class="org-node root">
+          <strong style="color: var(--primary);">Koti Vidya Charitable Trust</strong>
+          <span style="display: block; font-size: 0.75rem; color: var(--text-light);">Management Board</span>
+        </div>
+        <div class="org-line"></div>
+        <div class="org-node">
+          <strong>Office of the President</strong>
+          <span style="display: block; font-size: 0.75rem; color: var(--text-light);">Dr. V. R. Alamuri</span>
+        </div>
+        <div class="org-line"></div>
+        <div class="org-node" style="border-top-color: var(--secondary);">
+          <strong>Principal</strong>
+          <span style="display: block; font-size: 0.75rem; color: var(--text-light);">Dr. S. K. Patil</span>
+        </div>
+        <div class="org-line"></div>
+        <div class="org-branch">
+          <div class="org-node">
+            <strong>Vice-Principal / Supervisors</strong>
+            <span style="display: block; font-size: 0.75rem; color: var(--text-light);">Daily operations</span>
+          </div>
+          <div class="org-node">
+            <strong>HODs (Science, Commerce, Arts)</strong>
+            <span style="display: block; font-size: 0.75rem; color: var(--text-light);">Academic streams</span>
+          </div>
+          <div class="org-node">
+            <strong>Competitive Exam Cell</strong>
+            <span style="display: block; font-size: 0.75rem; color: var(--text-light);">JEE / NEET Coordinators</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Injected Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript Component and Tab Logic -->
+  <script src="components.js"></script>
+  <script>
+    function openTab(tabId) {
+      const contents = document.querySelectorAll(".tab-content");
+      contents.forEach(content => content.classList.remove("active"));
+      
+      const buttons = document.querySelectorAll(".tab-btn");
+      buttons.forEach(btn => btn.classList.remove("active"));
+      
+      document.getElementById(tabId).classList.add("active");
+      event.currentTarget.classList.add("active");
+    }
+  </script>
+</body>
+</html>

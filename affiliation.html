@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affiliation & Approvals | Noble School & Junior College</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .accreditation-card {
+      background-color: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 2rem;
+      transition: var(--transition);
+    }
+    .accreditation-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+    .badge-graphic {
+      background-color: var(--primary);
+      color: var(--white);
+      min-width: 120px;
+      height: 120px;
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 800;
+      font-size: 1.25rem;
+      font-family: var(--font-headings);
+      flex-shrink: 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .accreditation-details h3 {
+      color: var(--primary);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 768px) {
+      .accreditation-card {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Injected Header -->
+  <div id="header-container"></div>
+
+  <main class="animate-fade-up">
+
+  <!-- Banner -->
+  <div class="page-banner animate-fade-up" style="background-image: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=80');">
+    <div class="page-banner-content">
+      <h1>Affiliation & Recognitions</h1>
+      <p>Home / Approvals & Quality Standards</p>
+    </div>
+  </div>
+
+  <!-- Introduction -->
+  <section class="section animate-fade-up delay-1">
+    <div class="container text-center" style="max-width: 800px;">
+      <h2 style="color: var(--primary); margin-bottom: 1rem;">Approvals & Certifications</h2>
+      <p style="color: var(--text-light); font-size: 1.05rem;">
+        Noble School & Junior College operates under direct recognition of the Maharashtra State Education Department and Board authorities.
+      </p>
+    </div>
+  </section>
+
+  <!-- Affiliation Cards -->
+  <section class="section bg-light animate-fade-up delay-2" style="padding-top: 2rem;">
+    <div class="container grid-2">
+      <div>
+        <!-- MSBSHSE Board -->
+        <div id="msbshse" class="accreditation-card">
+          <div class="badge-seal">MSBSHSE</div>
+          <div class="accreditation-details">
+            <h3>Affiliated with MSBSHSE (Pune)</h3>
+            <p style="color: var(--text-light); margin-bottom: 0.75rem; font-weight: 600;">Maharashtra State Board of Secondary & Higher Secondary Education, Pune</p>
+            <p style="margin-bottom: 0.5rem;">
+              Our school and junior college programs (Class 10 SSC and Class 12 HSC) are permanently affiliated with the MSBSHSE Board, under the Divisional Board of Mumbai.
+            </p>
+            <p>
+              <strong>College Board Code:</strong> J-32.04.085 (Thane District)
+            </p>
+          </div>
+        </div>
+
+        <!-- DYDE Department -->
+        <div id="dyde" class="accreditation-card">
+          <div class="badge-seal" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-hover) 100%); outline-color: var(--secondary);">DYDE</div>
+          <div class="accreditation-details">
+            <h3>Recognized by Education Department</h3>
+            <p style="color: var(--text-light); margin-bottom: 0.75rem; font-weight: 600;">Office of the Deputy Director of Education (DYDE), Mumbai Region</p>
+            <p style="margin-bottom: 0.5rem;">
+              Noble Junior College is officially recognized under the Maharashtra Self-Financed Schools Act, offering Science, Commerce, and Arts streams with approved CAP admission quotas.
+            </p>
+            <p>
+              <strong>College Index Code:</strong> MU-0456J
+            </p>
+          </div>
+        </div>
+
+        <!-- ISO -->
+        <div class="accreditation-card">
+          <div class="badge-seal">ISO</div>
+          <div class="accreditation-details">
+            <h3>ISO 9001:2015 Quality System</h3>
+            <p style="color: var(--text-light); margin-bottom: 0.75rem; font-weight: 600;">International Organization for Standardization</p>
+            <p>
+              Our administration system, science lab maintenance protocols, class registries, and security guidelines are certified under ISO 9001:2015 standards, ensuring quality assurance at all institutional tiers.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="img-container" style="height: 520px; position: sticky; top: 100px;">
+          <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="Official Affiliation Certifications">
+          <div class="overlay-gradient">
+            <h3 style="font-size: 1.5rem; font-family: var(--font-headings); font-weight: 700; margin-bottom: 0.5rem; color: var(--white);">Standard Certified Quality</h3>
+            <p style="font-size: 0.9rem; opacity: 0.9; color: var(--white);">Maintaining complete transparency, standard guidelines, and ISO certified procedures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Injected Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript Component -->
+  <script src="components.js"></script>
+</body>
+</html>

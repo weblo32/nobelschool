@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics | Noble School & Junior College</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .stream-badge {
+      display: inline-block;
+      background-color: var(--secondary);
+      color: var(--white);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+    .subject-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .subject-item {
+      background-color: var(--white);
+      border: 1px solid var(--border-color);
+      padding: 1rem 1.25rem;
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: var(--transition);
+    }
+    .subject-item:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-sm);
+      transform: translateX(4px);
+    }
+    .subject-icon {
+      background-color: rgba(118, 39, 50, 0.1);
+      color: var(--primary);
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Injected Header -->
+  <div id="header-container"></div>
+
+  <main class="animate-fade-up">
+
+  <!-- Banner -->
+  <div class="page-banner animate-fade-up" style="background-image: url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80');">
+    <div class="page-banner-content">
+      <h1>Academic Streams</h1>
+      <p>Home / Academics Info</p>
+    </div>
+  </div>
+
+  <!-- Academics Intro -->
+  <section class="section animate-fade-up delay-1">
+    <div class="container text-center" style="max-width: 800px;">
+      <h2 style="color: var(--primary); margin-bottom: 1rem;">Junior College Education (FYJC & SYJC)</h2>
+      <p style="color: var(--text-light); font-size: 1.05rem;">
+        Noble Junior College offers Maharashtra State Board curriculum for Class 11 and 12. We provide comprehensive notes, experienced lecturers, and modern practical lab facilities.
+      </p>
+    </div>
+  </section>
+
+  <!-- Science Stream Section -->
+  <section id="science" class="section bg-light animate-fade-up delay-2">
+    <div class="container grid-2" style="align-items: center;">
+      <div>
+        <div class="stream-badge">Science Stream</div>
+        <h2 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 2rem;">General & Bifocal Science</h2>
+        <p style="color: var(--text-light); margin-bottom: 2rem;">
+          Designed for students aiming to pursue Careers in Engineering, Medicine, Pharmacy, or Research. We offer well-equipped laboratories for practical training.
+        </p>
+        
+        <h3 style="font-size: 1.25rem; color: var(--primary); margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem;">Compulsory & Optional Subjects</h3>
+        <div class="subject-list" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="subject-item">
+            <div class="subject-icon">🔬</div>
+            <strong>Physics</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">🧪</div>
+            <strong>Chemistry</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">📐</div>
+            <strong>Mathematics</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">🐸</div>
+            <strong>Biology</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">💻</div>
+            <strong>Comp. Science*</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">🔌</div>
+            <strong>Electronics*</strong>
+          </div>
+          <div class="subject-item" style="grid-column: span 2;">
+            <div class="subject-icon">📖</div>
+            <strong>English & Hindi/IT</strong>
+          </div>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 1rem;">* Note: Bifocal subjects replace Biology & second language, allocated on merit.</p>
+      </div>
+      <div>
+        <div class="img-container" style="height: 380px;">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80" alt="Science Practical">
+          <div class="overlay-gradient">
+            <h4 style="font-size: 1.25rem; font-family: var(--font-headings); font-weight: 700; margin-bottom: 0.25rem; color: var(--white);">Noble Science Cell</h4>
+            <p style="font-size: 0.8rem; opacity: 0.9; color: var(--white);">Fully-equipped physics, chemistry, and biology labs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commerce Stream Section -->
+  <section id="commerce" class="section animate-fade-up">
+    <div class="container grid-2" style="align-items: center; flex-direction: row-reverse; display: grid;">
+      <div>
+        <div class="img-container" style="height: 380px;">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Commerce Class">
+          <div class="overlay-gradient">
+            <h4 style="font-size: 1.25rem; font-family: var(--font-headings); font-weight: 700; margin-bottom: 0.25rem; color: var(--white);">Noble Commerce Cell</h4>
+            <p style="font-size: 0.8rem; opacity: 0.9; color: var(--white);">Developing strategic business and IT foundations.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="stream-badge" style="background-color: var(--primary);">Commerce Stream</div>
+        <h2 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 2rem;">Commerce & IT</h2>
+        <p style="color: var(--text-light); margin-bottom: 2rem;">
+          Provides business foundation classes. Excellent track record with special mentoring for CA Foundation and CS entrance exams.
+        </p>
+
+        <h3 style="font-size: 1.25rem; color: var(--primary); margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem;">Subjects Offered</h3>
+        <div class="subject-list" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="subject-item">
+            <div class="subject-icon">📊</div>
+            <strong>Accountancy</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">💼</div>
+            <strong>OCM</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">📉</div>
+            <strong>Economics</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">🖋️</div>
+            <strong>Secretarial Practice</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">📐</div>
+            <strong>Maths (Optional)</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">💻</div>
+            <strong>IT (Optional)</strong>
+          </div>
+          <div class="subject-item" style="grid-column: span 2;">
+            <div class="subject-icon">📖</div>
+            <strong>English & Hindi/Marathi</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arts Stream Section -->
+  <section id="arts" class="section bg-light animate-fade-up">
+    <div class="container grid-2" style="align-items: center;">
+      <div>
+        <div class="stream-badge">Arts Stream</div>
+        <h2 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 2rem;">Humanities & Social Sciences</h2>
+        <p style="color: var(--text-light); margin-bottom: 2rem;">
+          A broad stream offering foundation elements in History, Politics, and Geography, helpful for Law, Design, and Civil Service (UPSC/MPSC) aspirants.
+        </p>
+
+        <h3 style="font-size: 1.25rem; color: var(--primary); margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem;">Subjects Offered</h3>
+        <div class="subject-list" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="subject-item">
+            <div class="subject-icon">🏺</div>
+            <strong>History</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">⚖️</div>
+            <strong>Pol. Science</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">🌍</div>
+            <strong>Geography</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">🧠</div>
+            <strong>Psychology</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">👥</div>
+            <strong>Sociology</strong>
+          </div>
+          <div class="subject-item">
+            <div class="subject-icon">📖</div>
+            <strong>English & Hindi</strong>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="img-container" style="height: 380px;">
+          <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=600&q=80" alt="Arts and Creativity">
+          <div class="overlay-gradient">
+            <h4 style="font-size: 1.25rem; font-family: var(--font-headings); font-weight: 700; margin-bottom: 0.25rem; color: var(--white);">Noble Humanities Center</h4>
+            <p style="font-size: 0.8rem; opacity: 0.9; color: var(--white);">Fostering critical thinking, creativity, and administrative skills.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Injected Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript Component -->
+  <script src="components.js"></script>
+</body>
+</html>

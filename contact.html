@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Noble School & Junior College</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-info-box {
+      background-color: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      transition: var(--transition);
+    }
+    .contact-info-box:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .contact-icon {
+      background-color: rgba(118, 39, 50, 0.1);
+      color: var(--primary);
+      min-width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .map-container {
+      background-color: var(--primary);
+      color: var(--white);
+      height: 350px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2.5rem;
+      margin-top: 2rem;
+      background-image: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Injected Header -->
+  <div id="header-container"></div>
+
+  <main class="animate-fade-up">
+
+  <!-- Banner -->
+  <div class="page-banner animate-fade-up" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80');">
+    <div class="page-banner-content">
+      <h1>Contact Us</h1>
+      <p>Home / Get in Touch</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container grid-2">
+      <!-- Contact Info Details -->
+      <div>
+        <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Get in Touch</h2>
+        <p style="color: var(--text-light); margin-bottom: 2rem;">
+          Have questions about junior college admissions, stream choices, fees, eligibility, or documentation? Feel free to contact our administration office using the details below.
+        </p>
+
+        <!-- Address Box -->
+        <div class="contact-info-box">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="18" height="18" fill="currentColor">
+              <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 0.25rem;">School Campus</h3>
+            <p style="font-size: 0.9rem; color: var(--text-light); line-height: 1.5;">
+              Sapgaon, Taluka Shahapur, Thane District, Maharashtra, India - 421601
+            </p>
+          </div>
+        </div>
+
+        <!-- Phones Box -->
+        <div class="contact-info-box">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor">
+              <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 0.25rem;">Admissions Office</h3>
+            <p style="font-size: 0.9rem; color: var(--text-light); line-height: 1.5;">
+              Mobile: +91 8879648603 / 9892653200<br>
+              Landline: (02527) 273180 / 181
+            </p>
+          </div>
+        </div>
+
+        <!-- Email Box -->
+        <div class="contact-info-box">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor">
+              <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 0.25rem;">Email Channels</h3>
+            <p style="font-size: 0.9rem; color: var(--text-light); line-height: 1.5;">
+              Admissions: info@noblejuniorcollege.edu.in<br>
+              Office: admin@noblejuniorcollege.edu.in
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div>
+        <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Send Message</h2>
+        <div style="background-color: var(--white); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); border-top: 4px solid var(--secondary);">
+          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+            <div class="form-group">
+              <label for="cname">Parent / Student Name *</label>
+              <input type="text" id="cname" class="form-control" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+              <label for="cemail">Email Address *</label>
+              <input type="email" id="cemail" class="form-control" required placeholder="Enter email address">
+            </div>
+
+            <div class="form-group">
+              <label for="csubject">Subject *</label>
+              <input type="text" id="csubject" class="form-control" required placeholder="e.g. FYJC Admission query, Document submission">
+            </div>
+
+            <div class="form-group">
+              <label for="cmessage">Message *</label>
+              <textarea id="cmessage" rows="5" class="form-control" required placeholder="Type your inquiry details..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-secondary" style="width: 100%;">Send Message</button>
+          </form>
+
+          <!-- Success message placeholder -->
+          <div id="successMessage" style="display: none; background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; padding: 1.5rem; border-radius: var(--border-radius); text-align: center;">
+            <h3 style="margin-bottom: 0.5rem;">Message Sent!</h3>
+            <p>Your message has been successfully received. Our administrative team will respond back to your email within 24 business hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Map -->
+  <section class="section bg-light animate-fade-up" style="padding-top: 2rem;">
+    <div class="container">
+      <h2 class="section-title">Google Maps Location</h2>
+      <div style="box-shadow: var(--shadow-lg); border-radius: var(--border-radius); overflow: hidden; border: 4px solid var(--white); height: 400px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.3340578136367!2d73.44754767576595!3d19.612952834371987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be70788aa3a7ed9%3A0xc07a8ea3f350c37b!2sSapgaon%2C%20Maharashtra%20421601!5e0!3m2!1sen!2sin!4v1718629000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Injected Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript Component and Form Handling -->
+  <script src="components.js"></script>
+  <script>
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      document.getElementById("contactForm").style.display = "none";
+      document.getElementById("successMessage").style.display = "block";
+    }
+  </script>
+</body>
+</html>

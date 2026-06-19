@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Gallery | Noble School & Junior College</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .filter-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background-color: var(--light);
+      border: 1px solid var(--border-color);
+      padding: 0.6rem 1.25rem;
+      font-weight: 600;
+      font-family: var(--font-headings);
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background-color: var(--primary);
+      color: var(--white);
+      border-color: var(--primary);
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .gallery-item {
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+    .gallery-item.hidden {
+      display: none;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+    
+    .gallery-img-placeholder {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 700;
+      font-family: var(--font-headings);
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 1.5rem;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .gallery-caption {
+      padding: 1.25rem;
+    }
+    
+    .gallery-caption h3 {
+      font-size: 1.15rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    
+    .gallery-caption p {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+    
+    .video-box {
+      background-color: var(--primary);
+      color: var(--white);
+      height: 380px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2.5rem;
+    }
+    .video-play-btn {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: var(--secondary);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      cursor: pointer;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+    }
+    .video-play-btn:hover {
+      transform: scale(1.1);
+      background-color: var(--secondary-hover);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Injected Header -->
+  <div id="header-container"></div>
+
+  <main class="animate-fade-up">
+
+  <!-- Banner -->
+  <div class="page-banner animate-fade-up" style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80');">
+    <div class="page-banner-content">
+      <h1>Events & Photo Gallery</h1>
+      <p>Home / Campus Highlights</p>
+    </div>
+  </div>
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="section animate-fade-up delay-1">
+    <div class="container">
+      <h2 class="section-title">Campus Events Gallery</h2>
+      
+      <!-- Filter Controls -->
+      <div class="filter-container">
+        <button class="filter-btn active" onclick="filterGallery('all')">Show All</button>
+        <button class="filter-btn" onclick="filterGallery('science')">Science Exhibition</button>
+        <button class="filter-btn" onclick="filterGallery('cultural')">Cultural Gathering</button>
+        <button class="filter-btn" onclick="filterGallery('sports')">Sports Meet</button>
+      </div>
+
+      <!-- Gallery Items -->
+      <div class="gallery-grid">
+        <!-- Science 1 -->
+        <div class="gallery-item" data-category="science">
+          <div class="gallery-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=400&q=80');">Science Exhibition</div>
+          <div class="gallery-caption">
+            <h3>Chemistry Lab Demo</h3>
+            <p>Class 12 students demonstrating chemical reaction parameters to visitors.</p>
+          </div>
+        </div>
+        <!-- Cultural 1 -->
+        <div class="gallery-item" data-category="cultural">
+          <div class="gallery-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=400&q=80');">Annual Stage</div>
+          <div class="gallery-caption">
+            <h3>Annual Gathering Day</h3>
+            <p>Musical and dance presentations by junior college students.</p>
+          </div>
+        </div>
+        <!-- Sports 1 -->
+        <div class="gallery-item" data-category="sports">
+          <div class="gallery-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=400&q=80');">Athletic Sprint</div>
+          <div class="gallery-caption">
+            <h3>Annual Sports Championship</h3>
+            <p>100m sprint race highlights of the school sports meet.</p>
+          </div>
+        </div>
+        <!-- Science 2 -->
+        <div class="gallery-item" data-category="science">
+          <div class="gallery-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=400&q=80');">Physics Project</div>
+          <div class="gallery-caption">
+            <h3>Automated Solar Tracker</h3>
+            <p>Class 11 Science students presenting a working model of a solar panel controller.</p>
+          </div>
+        </div>
+        <!-- Cultural 2 -->
+        <div class="gallery-item" data-category="cultural">
+          <div class="gallery-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80');">Drama Competition</div>
+          <div class="gallery-caption">
+            <h3>Inter-Class Drama Contest</h3>
+            <p>Performing social awareness skits during general assembly.</p>
+          </div>
+        </div>
+        <!-- Sports 2 -->
+        <div class="gallery-item" data-category="sports">
+          <div class="gallery-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1544698310-74ea9d1c8258?auto=format&fit=crop&w=400&q=80');">Kabaddi Finals</div>
+          <div class="gallery-caption">
+            <h3>Inter-House Kabaddi Match</h3>
+            <p>An intense kabaddi match during the winter sports week.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="videos" class="section bg-light animate-fade-up">
+    <div class="container" style="max-width: 800px;">
+      <h2 class="section-title">Virtual Campus Walkthrough</h2>
+      <div class="video-box">
+        <div class="video-play-btn">▶</div>
+        <h3>Take a Tour of Noble Junior College</h3>
+        <p style="opacity: 0.9; max-width: 500px; margin-top: 0.5rem; line-height: 1.6;">
+          A short tour showcasing our science labs, computing facilities, central library, smart classrooms, and sports grounds.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Injected Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript Component and Gallery Filter Logic -->
+  <script src="components.js"></script>
+  <script>
+    function filterGallery(category) {
+      const buttons = document.querySelectorAll(".filter-btn");
+      buttons.forEach(btn => btn.classList.remove("active"));
+      event.currentTarget.classList.add("active");
+
+      const items = document.querySelectorAll(".gallery-item");
+      items.forEach(item => {
+        if (category === "all") {
+          item.classList.remove("hidden");
+        } else {
+          if (item.getAttribute("data-category") === category) {
+            item.classList.remove("hidden");
+          } else {
+            item.classList.add("hidden");
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
